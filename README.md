@@ -9,11 +9,11 @@ This API fetches a random fun fact from a public external API, reformats the dat
 
 The goal of this project is to demonstrate:
 
-* Creating an Express server
-* Consuming a third-party API from the server
-* Using `axios` with `async/await`
-* Proper error handling for external API requests
-* Returning **clean, minimal API responses** to clients
+-   Creating an Express server
+-   Consuming a third-party API from the server
+-   Using `axios` with `async/await`
+-   Proper error handling for external API requests
+-   Returning **clean, minimal API responses** to clients
 
 This lab emphasizes **API abstraction** and **separation of concerns**—core backend development skills.
 
@@ -21,10 +21,10 @@ This lab emphasizes **API abstraction** and **separation of concerns**—core ba
 
 ## 🧩 What This API Does
 
-* Exposes a custom endpoint at `/api/fun-fact`
-* Fetches a random fun fact from the **Useless Facts API**
-* Extracts and returns only the relevant data
-* Handles API and network errors gracefully
+-   Exposes a custom endpoint at `/api/fun-fact`
+-   Fetches a random fun fact from the **Useless Facts API**
+-   Extracts and returns only the relevant data
+-   Handles API and network errors gracefully
 
 ---
 
@@ -48,7 +48,7 @@ Fetches a random fun fact from an external API and returns it in a simplified JS
 
 ```json
 {
-  "fact": "A standard deck of cards is a calendar..."
+    "fact": "A standard deck of cards is a calendar..."
 }
 ```
 
@@ -56,7 +56,7 @@ Fetches a random fun fact from an external API and returns it in a simplified JS
 
 ```json
 {
-  "message": "Error fetching data from external API."
+    "message": "Error fetching data from external API."
 }
 ```
 
@@ -67,18 +67,18 @@ Fetches a random fun fact from an external API and returns it in a simplified JS
 **Useless Facts API**
 A free public API that provides random trivia.
 
-* Endpoint used:
-  `https://uselessfacts.jsph.pl/api/v2/facts/random`
-* No API key required
+-   Endpoint used:
+    `https://uselessfacts.jsph.pl/api/v2/facts/random`
+-   No API key required
 
 ---
 
 ## 🛠️ Built With
 
-* **Node.js**
-* **Express** – Web server framework
-* **Axios** – HTTP client for API requests
-* **JavaScript (ES6+)**
+-   **Node.js**
+-   **Express** – Web server framework
+-   **Axios** – HTTP client for API requests
+-   **JavaScript (ES6+)**
 
 ---
 
@@ -99,8 +99,13 @@ fun-fact-api/
 ### **1️⃣ Clone the repository**
 
 ```bash
-git clone <your-github-repo-url>
-cd fun-fact-api
+git clone https://github.com/structbase/Server-to-Server-Communication
+```
+
+---
+
+```
+cd Server-to-Server-Communication
 ```
 
 ---
@@ -141,10 +146,10 @@ Refresh to receive a new random fact each time.
 
 ## 🧠 Key Learning Takeaways
 
-* **Data shaping matters**: Clients should receive only what they need.
-* **Server-side API consumption** protects clients from external API changes.
-* **Error abstraction** prevents leaking implementation details.
-* `async/await` improves readability and error handling in asynchronous code.
+-   **Data shaping matters**: Clients should receive only what they need.
+-   **Server-side API consumption** protects clients from external API changes.
+-   **Error abstraction** prevents leaking implementation details.
+-   `async/await` improves readability and error handling in asynchronous code.
 
 ---
 
